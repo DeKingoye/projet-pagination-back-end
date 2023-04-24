@@ -13,7 +13,7 @@ app.get("/", async (req,res)=>{
     res.send("hello world")
 })
 
-app.get("/test", async (req,res)=>{
+app.get("/page", async (req,res)=>{
     const test = await testFunction(req,res)
     res.status(200).send(test)
 })
